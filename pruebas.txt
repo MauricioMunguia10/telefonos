@@ -1,0 +1,28 @@
+let c=1,m=1,p=1;
+    for(const key in dato[0]){
+        fila= document.getElementById("fila"+c);
+        let comparacion=key;
+        //alert(comparacion);
+        if(comparacion=="clave"+c){
+            //alert("entra");
+            let columna1=document.createElement('td');
+            columna1.textContent=dato[0]["clave"+c]+"  ";
+            fragment2.appendChild(columna1);
+            fila.appendChild(fragment2);
+            c++;
+        }else if(comparacion=="modelo"+m){
+            //alert("entra");
+            let columna2=document.createElement('td');
+            columna2.textContent=dato[0]["modelo"+m]+"  ";
+            fragment2.appendChild(columna2);
+            fila.appendChild(fragment2);
+            m++;
+        }else if(comparacion=="precio"+p){
+            //alert("entra");
+            let columna3=document.createElement('td');
+            columna3.textContent=dato[0]["precio"+p]+"  ";
+            fragment2.appendChild(columna3);
+            fila.appendChild(fragment2);
+            p++;
+        }
+    }

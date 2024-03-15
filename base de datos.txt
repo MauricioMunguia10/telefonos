@@ -1,0 +1,14 @@
+create database modelos;
+use modelos;
+
+create table modelos_moviles(clave int,modelo varchar(50),precio float); 
+
+insert into modelos_moviles values(1742,'iPhone 13 Pro Max',12000);
+insert into modelos_moviles values(1743,'Galaxy S21',9000);
+insert into modelos_moviles values(1744,'Galaxy S23',10000);
+insert into modelos_moviles values(1745,'Samsung A02',3100);
+
+create table  contar(clave int,numero int);
+insert into contar values(1,0);
+
+UPDATE contar SET numero = REPLACE (numero, 0, 1);
